@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="table.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="images/logo.svg" alt="">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="index.html#experince-section">Experience</a></li>
+                <li><a class="nav-link" href="index.html#project-section">Projects</a></li>
+                <li><a class="nav-link" href="index.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="form-section">
+        <div class="inner-form">
+            <div class="add-element-div" id="add-day-div">
+                <label for="add-day-input">Add Day</label>
+                <input id="add-day-input" type="text" name="add-day-input" placeholder="Monday">
+                <button id="day-add-btn" class="btn">Add</button>
+            </div>
+            <div class="add-element-div">
+                <label for="add-time-input">Add Time</label>
+                <input id="add-time-input" type="text" name="add-time-input" placeholder="0930-1000">
+                <button id="time-add-btn" class="btn">Add</button>
+            </div>
+            <div id="add-agenda-heading">
+                <h2>Add Agenda</h2>
+            </div>
+            <div class="add-element-div">
+                <label for="day-input">Day</label>
+                <select name="day-input" id="day-input"></select>
+                <!-- <input id="day-input" type="text" name="day-input" placeholder="Monday"> -->
+            </div>
+            <div class="add-element-div">
+                <label for="time-input">Time</label>
+                <select name="time-input" id="time-input"></select>
+                <!-- <input id="time-input" type="text" name="time-input" placeholder="0930-1000"> -->
+            </div>
+            <div class="add-element-div">
+                <label for="agenda-input">Agenda</label>
+                <input id="agenda-input" type="text" name="agenda-input" placeholder="Executive meeting">
+                <button id="agenda-add-btn" class="btn">Add</button>
+            </div>
+            
+        </div>
+    </section>
+    <section class="table-section">
+        <table class="main-table">
+            <tr id="r0">
+                <th id="c00">Schedule</th>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <div class="footer-div">
+            <div>
+                <a href=""><img id="facebook-logo" src="images/icons8-facebook.svg" alt=""></a>
+                <a href="https://github.com/Yashl-Ammar"><img id="github-logo" src="images/icons8-github-64.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/yashlammar/"><img id="linkedin-logo" src="images/icons8-linkedin-circled.svg" alt=""></a>
+            </div>
+            <p>Info - Support - Contact</p>
+            <p>© 2023 Yashl Ammar</p>
+        </div>
+    </footer>
+
+</body>
+</html>

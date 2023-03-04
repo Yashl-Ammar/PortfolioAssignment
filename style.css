@@ -1,0 +1,587 @@
+:root{
+    --darkBlack: #111111;
+    --darkGray: #222222;
+    --offWhite: #F0EAEA;
+    --yellow: #F1C21B;
+    --textGrey: #A6A6A6;
+    --lightGray: #333333;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--darkBlack);
+    font-family: Roboto Slab, serif;
+    font-size: 16px;
+}
+
+h1{
+    font-size: clamp(20px, 5vw, 96px);
+    margin: 0;
+    color: var(--offWhite);
+}
+
+h2{
+    font-size: clamp(20px, 2vw, 96px);
+    margin: 0;
+    padding: 0;
+    color: var(--offWhite);
+}
+
+h3{
+    font-size: clamp(20px, 1vw, 96px);
+    margin: 0;
+    padding: 0;
+    color: var(--textGrey);
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo{
+    width: 90px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: var(--darkGray);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 70%;
+}
+
+.nav-link{
+    color: #A6A6A6;
+    text-decoration: none;
+    padding: 1vw;
+}
+
+.nav-link:hover{
+    opacity: 0.8;
+}
+
+.form-section { 
+    background-color: #222222;
+    /* height: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: var(--offWhite);
+}
+
+.inner-form label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.inner-form input , select{
+    background-color: #222222;
+    border-radius: 5px;
+    border: 1px solid var(--offWhite);
+    padding: 5px;
+    color: white;
+}
+
+
+
+.add-element-div{
+    padding: 2vw 0px;
+}
+
+#add-day-div{
+    grid-column: 1 / span 2;
+}
+
+.btn{
+    background-color: var(--yellow);
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background-color: red;
+}
+
+#add-agenda-heading{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+
+.table-section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-table{
+    color: var(--offWhite);
+}
+
+.main-table th{
+    background-color: var(--yellow);
+    padding: 10px;
+}
+
+.main-table td{
+    padding: 10px;
+    border: 1px solid var(--yellow);
+    text-align: center;
+}
+
+#c00{
+    border-radius: 5px 0px 0px 0px;
+}
+
+.del-btn{
+    display: none;
+
+}
+
+.main-table td p{
+    margin: 0px;
+}
+
+.main-table td p:hover + .del-btn{
+    display: inline;
+    padding: 0px;
+}
+
+.del-btn:hover{
+    display: inline;
+}
+
+footer{
+    color: var(--textGrey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkGray);
+    padding: 10px;
+}
+
+.footer-div{
+    width: 40%;
+    text-align: center;
+}
+.footer-div div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#github-logo{
+    width: 60px;
+}
+
+
+
+
+.profile-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkGray);
+}
+
+.div-container{
+    display: flex;
+    width: 70%;
+}
+
+.profile-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-picture{
+    width: 100%;
+}
+
+#SE-text{
+    color: var(--offWhite);
+}
+
+.divider1{
+    width: 100%;
+    margin-top: -1px;
+}
+
+.divider1 img{
+    width: 100%;
+}
+
+.Skills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-div-container{
+    width: 80%;
+}
+
+#skill-underline{
+    width: 15%;
+    height: 1%;
+    background-color: var(--offWhite);
+}
+
+#project-underline{
+    width: 21%;
+    height: 2%;
+    background-color: var(--offWhite);
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+    margin: 200px 0px;
+}
+
+.outer-skill-div{
+    display: flex;
+    justify-content: center;
+}
+
+
+.inner-skill-div{
+    padding: 10px;
+    width: 40%;
+}
+
+.bar1{
+    background-color: var(--yellow);
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.bar2{
+    background-color: var(--lightGray);
+    position: relative;
+    top: -20px;
+    z-index: -1;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.usedin-h2{
+    color: var(--textGrey);
+}
+
+.skill-logo {
+    width: 20%;
+}
+
+.node-logo{
+    width: 30%;
+}
+
+.flutter-logo{
+    width: 40%;
+}
+
+.react-logo{
+    width: 30%;
+}
+
+.project-section{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.inner-project-container{
+    width: 80%;
+}
+
+.project-scroller{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 30%;
+    gap: 5vw;
+
+    margin: 5% 0;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.project-div{
+    aspect-ratio: 16/9;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    background-color: #333333;
+}
+.div-up{
+    height: 30%;
+}
+
+.project-div .div-down{
+    position: relative;
+
+}
+
+.project-div .div-down::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 117%;
+    opacity: 0.8;
+    background-image: linear-gradient(transparent,black);
+
+}
+
+.project-div div h2,.project-div div h3{
+    margin: 0px;
+    position: relative;
+    padding: 0 7%;
+}
+
+.project-div div h2{
+    margin-top: 15%;
+}
+
+.p1{
+    
+    background-image: url('images/clima.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p2{
+    background-image: url('images/bitcoin.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p3{
+    background-image: url('images/maher.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p4{
+    background-image: url('images/bodmi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p5{
+    background-image: url('images/todooy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.experince-section{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.inner-experience-div{
+    width: 80%;
+}
+
+.experience-grid{
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+    grid-template-rows: minmax(0,1fr) minmax(0,1fr);
+    gap: 5vw;
+    margin: 10% 0;
+}
+
+#experience-underline{
+    width: 30%;
+    height: 1%;
+    background-color: var(--offWhite);
+}
+
+.experience-desc h3{
+    color: var(--textGrey);
+    padding: 0px;
+}
+
+.experience-logo{
+    width: 30%;
+}
+
+.experience-info{
+    width: 70%;
+    padding: 0px 5%;
+}
+
+.experience-info h2{
+    margin: 4% 0;
+}
+
+
+.experience-logo img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.experience-upper-div{
+    display: flex;
+}
+
+.position-term{
+    color: var(--textGrey);
+}
+
+.term{
+    color: var(--offWhite);
+}
+
+.experience-grid-cell-fast{
+    grid-column: 1/span 2;
+    grid-row: 2;
+}
+
+.experience-grid-cell-fast-outer-div{
+    width: 60%;
+}
+
+.education-section{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--darkGray);
+    padding: 5% 0;
+    margin-top: -10%;
+}
+
+.course-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.course-outer-div{
+    width: 80%;
+}
+
+.course-grid{
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+
+    gap: 5vw;
+    
+    margin: 10% 0;
+}
+
+.course-grid-cell{
+    border: 3px solid var(--offWhite);
+    background-color: var(--darkGray);
+    color: var(--offWhite);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10%;
+}
+
+.course-grid-cell h3{
+    color: var(--offWhite);
+}
+
+.course-hr{
+    width: 22%;
+    height: 0.5%;
+    background-color: var(--offWhite);
+}
+
+.other-course-hr{
+    width: 40%;
+    height: 0.5%;
+    background-color: var(--offWhite);
+}
+
+@media only screen and  (max-width: 991px) {
+    .inner-form{
+        grid-template-columns: 1fr;
+    }
+    #add-day-div{
+        grid-column: auto;
+    }
+    #add-agenda-heading{
+        grid-column: auto;
+        grid-row: 3;
+    }
+    #logo{
+        width:50px;
+    }
+    nav{
+        width: 100%;
+        justify-content: left;
+    }
+    .nav-list{
+        padding: 0px;
+    }
+    .project-scroller{
+        grid-auto-columns: 40%;
+    }
+}
+
+
+@media only screen and  (max-width: 767px) {
+    .div-container{
+        flex-direction: column;
+    }
+    .skills-grid{
+        grid-template-columns: 1fr;
+    }
+    .course-grid{
+        grid-template-columns: 1fr;
+    }
+    .experience-grid{
+        grid-template-columns: 1fr;
+    }
+    .experience-grid-cell{
+        margin: 3% 0;
+    }
+    .experience-grid-cell-fast{
+        grid-column: auto;
+        grid-row: auto;
+        margin: 3% 0;
+    }
+    .experience-grid-cell-fast-outer-div{
+        width: 100%;
+    }
+    .project-scroller{
+        grid-auto-columns: 70%;
+    }
+    .inner-skill-div{
+        width: 60%;
+    }
+    .flutter-logo{
+        width: 30%;
+    }
+}
